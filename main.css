@@ -20,21 +20,6 @@
 	box-sizing: border-box;
 }
 
-@import url('https://rsms.me/inter/inter.css');
-
-html {
-	font-family: 'Inter', sans-serif;
-	letter-spacing: 0.025em;
-	-webkit-font-smoothing: auto;
-	-moz-osx-font-smoothing: auto;
-}
-
-@supports (font-variation-settings: normal) {
-	html {
-		font-family: 'Inter var', sans-serif;
-	}
-}
-
 body {
 	height: 100vh;
 }
@@ -64,10 +49,6 @@ p {
 }
 
 header.hero {
-	background: center / cover no-repeat url('images/beach-background.jpg')
-		rgba(0, 0, 0, 0.4);
-	background-attachment: fixed;
-	color: white;
 	font-size: var(--text-md);
 	text-align: center;
 	background-blend-mode: overlay;
