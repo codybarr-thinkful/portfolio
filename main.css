@@ -8,6 +8,7 @@
 	--spacing-sm: 1rem;
 	--spacing-md: 2rem;
 	--spacing-lg: 3rem;
+	--spacing-xl: 9rem;
 
 	--full: 9999px;
 
@@ -37,6 +38,19 @@ html {
 	}
 }
 
+.triangle {
+	height: 5rem;
+	width: 100%;
+	fill: currentColor;
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+.triangle.desktop {
+	display: none;
+}
+
 body {
 	height: 100vh;
 	min-height: 100%;
@@ -49,8 +63,9 @@ img {
 
 .container {
 	margin: 0 auto;
-	max-width: var(--lg);
+	max-width: var(--md);
 	padding: var(--spacing-lg);
+	padding-bottom: var(--spacing-xl);
 }
 
 h1,
@@ -76,10 +91,15 @@ header.hero {
 	background-blend-mode: overlay;
 	padding-top: var(--spacing-md);
 	padding-bottom: var(--spacing-md);
+	position: relative;
 }
 
 header.hero footer {
 	display: none;
+}
+
+main {
+	position: relative;
 }
 
 figure.avatar {
@@ -91,8 +111,21 @@ figure.avatar img {
 	width: 100px;
 }
 
+.bio {
+	position: relative;
+}
+
+.triangle.bio-triangle {
+	color: #f9f9f9;
+}
+
 .projects {
 	background-color: #f9f9f9;
+	position: relative;
+}
+
+.triangle.projects-triangle {
+	color: #444444;
 }
 
 .projects img {
@@ -210,10 +243,29 @@ footer p.email {
 		height: auto;
 	}
 
+	.container {
+		padding-bottom: var(--spacing-lg);
+	}
+
+	.triangle.mobile {
+		display: none;
+	}
+
 	header.hero {
 		position: relative;
 		width: 35vw;
 		background-attachment: scroll;
+	}
+
+	.triangle.hero-triangle {
+		display: block;
+		top: 0;
+		width: 5rem;
+		left: 35vw;
+		height: 100vh;
+		width: 5rem;
+		position: fixed;
+		margin-left: -5rem;
 	}
 
 	header.hero > .container {
@@ -223,14 +275,24 @@ footer p.email {
 
 	header.hero footer {
 		display: block;
-		position: fixed;
 		width: 35vw;
 		bottom: 0;
 		font-size: var(--text-base);
 	}
 
+	header.hero footer .container {
+		position: fixed;
+		bottom: 0;
+		width: 35vw;
+		background-color: #444444aa;
+	}
+
 	main {
 		flex-grow: 1;
+	}
+
+	.projects {
+		background-color: white;
 	}
 
 	body > footer {
