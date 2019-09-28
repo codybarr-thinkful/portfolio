@@ -6,11 +6,9 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Cody Barr | Portfolio</title>
 
-		<link href="https://unpkg.com/tailwindcss/dist/base.css" rel="stylesheet" />
 		<link
+			href="https://unpkg.com/tailwindcss/dist/base.css"
 			rel="stylesheet"
-			type="text/css"
-			href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
 		/>
 		<link rel="stylesheet" href="main.css" />
 	</head>
@@ -27,118 +25,179 @@
 				</figure>
 				<section class="headline">
 					<p>
-						Howdy! I'm Cody, a recent coding bootcamp graduate and aspiring
-						full-stack developer.
+						Howdy! I'm Cody, a recent coding bootcamp graduate and
+						aspiring full-stack developer.
 					</p>
 				</section>
 			</div>
+			<footer role="content-info">
+				<div class="container">
+					<section class="social-links">
+						<a
+							href="https://github.com/codybarr"
+							aria-label="link to cody's github"
+						>
+							<svg width="50px" height="50px">
+								<use xlink:href="#github-icon"></use>
+							</svg>
+						</a>
+						<a
+							href="https://linkedin.com/in/codybarr"
+							aria-label="link to cody's linked in profile"
+						>
+							<svg width="50px" height="50px">
+								<use xlink:href="#linkedin-icon"></use>
+							</svg>
+						</a>
+					</section>
+					<p class="email">
+						<a href="mailto:cody.barr@gmail.com"
+							>cody.barr@gmail.com</a
+						>
+					</p>
+				</div>
+			</footer>
 		</header>
 		<main>
 			<section class="bio">
 				<div class="container">
 					<h2>Bio</h2>
 					<p>
-						I've been coding on and off my whole life but recently took the
-						plunge with <a href="https://thinkful.com">Thinkful</a> to round out
-						my rough edges. I like coding because it's basically magic ✨ and
-						magic is fun 🧙🏻‍. Lately I've been playing around with Vue.js,
-						Gridsome, GraphQL, and TailwindCSS.
+						I've been coding on and off my whole life but recently
+						took the plunge with
+						<a href="https://thinkful.com">Thinkful</a> to round out
+						my rough edges. I like coding because it's basically
+						magic ✨ and magic is fun 🧙🏻‍. Lately I've been playing
+						around with Vue.js, Gridsome, GraphQL, and TailwindCSS.
 					</p>
 					<p>
-						When I'm not coding I enjoy watching movies, playing with and
-						teaching my four kiddos (shameless homeschoolers), and Hearthstone.
+						When I'm not coding I enjoy watching movies, playing
+						with and teaching my four kiddos (shameless
+						homeschoolers), and Hearthstone.
 					</p>
 				</div>
 			</section>
 			<section class="projects">
 				<div class="container">
 					<h2>Projects</h2>
-					<article>
-						<figure class="screenshot">
-							<img src="images/quiz-app.png" alt="Quiz App screenshot" />
-						</figure>
-						<div class="title-and-tech-used">
-							<h3>Quiz App</h3>
-							<ul class="tech-used">
+					<div class="project-list">
+						<article>
+							<figure class="screenshot">
+								<img
+									src="images/quiz-app.png"
+									alt="Quiz App screenshot"
+								/>
+							</figure>
+							<div class="title-and-tech-used">
+								<h3>Quiz App</h3>
+								<ul class="tech-used">
+									<li>
+										<svg
+											width="25px"
+											height="25px"
+											title="html 5"
+										>
+											<use xlink:href="#html5-icon"></use>
+										</svg>
+									</li>
+									<li>
+										<svg
+											width="20px"
+											height="20px"
+											title="css 3"
+										>
+											<use xlink:href="#css3-icon"></use>
+										</svg>
+									</li>
+									<li>
+										<svg
+											width="20px"
+											height="20px"
+											title="jquery"
+										>
+											<use
+												xlink:href="#jquery-icon"
+											></use>
+										</svg>
+									</li>
+								</ul>
+							</div>
+							<p class="project-description">
+								Simple interactive quiz app featuring multiple
+								choice questions related to the online CCG
+								Hearthstone.
+							</p>
+							<ul class="project-links">
 								<li>
-									<svg width="25px" height="25px" title="html 5">
-										<use xlink:href="#html5-icon"></use>
-									</svg>
+									<span class="label">App</span
+									><a
+										href="https://codybarr-thinkful.github.io/quiz-app"
+										>https://codybarr-thinkful.github.io/quiz-app</a
+									>
 								</li>
 								<li>
-									<svg width="20px" height="20px" title="css 3">
-										<use xlink:href="#css3-icon"></use>
-									</svg>
-								</li>
-								<li>
-									<svg width="20px" height="20px" title="jquery">
-										<use xlink:href="#jquery-icon"></use>
-									</svg>
-								</li>
-							</ul>
-						</div>
-						<p class="project-description">
-							Simple interactive quiz app featuring multiple choice questions
-							related to the online CCG Hearthstone.
-						</p>
-						<ul class="project-links">
-							<li>
-								<span class="label">App</span
-								><a href="https://codybarr-thinkful.github.io/quiz-app"
-									>https://codybarr-thinkful.github.io/quiz-app</a
-								>
-							</li>
-							<li>
-								<span class="label">Repo</span>
-								<a href="https://github.com/codybarr-thinkful/quiz-app"
-									>https://github.com/codybarr-thinkful/quiz-app</a
-								>
-							</li>
-						</ul>
-					</article>
-					<article>
-						<figure class="screenshot">
-							<img src="images/quiz-app.png" alt="Quiz App screenshot" />
-						</figure>
-						<div class="title-and-tech-used">
-							<h3>Quiz App</h3>
-							<ul class="tech-used">
-								<li>
-									<svg width="25px" height="25px">
-										<use xlink:href="#html5-icon"></use>
-									</svg>
-								</li>
-								<li>
-									<svg width="20px" height="20px">
-										<use xlink:href="#css3-icon"></use>
-									</svg>
-								</li>
-								<li>
-									<svg width="20px" height="20px">
-										<use xlink:href="#jquery-icon"></use>
-									</svg>
+									<span class="label">Repo</span>
+									<a
+										href="https://github.com/codybarr-thinkful/quiz-app"
+										>https://github.com/codybarr-thinkful/quiz-app</a
+									>
 								</li>
 							</ul>
-						</div>
-						<p class="project-description">
-							Simple interactive quiz app featuring multiple choice questions
-							related to the online CCG Hearthstone
-						</p>
-						<ul class="project-links">
-							<li>
-								<span class="label">App</span>
-								<a href="https://codybarr-thinkful.github.io/quiz-app">
-									https://codybarr-thinkful.github.io/quiz-app
-								</a>
-							</li>
-							<li>
-								<span class="label">Repo</span>
-								<a href="https://github.com/codybarr-thinkful/quiz-app">
-									https://github.com/codybarr-thinkful/quiz-app
-								</a>
-							</li>
-						</ul>
-					</article>
+						</article>
+						<article>
+							<figure class="screenshot">
+								<img
+									src="images/quiz-app.png"
+									alt="Quiz App screenshot"
+								/>
+							</figure>
+							<div class="title-and-tech-used">
+								<h3>Quiz App</h3>
+								<ul class="tech-used">
+									<li>
+										<svg width="25px" height="25px">
+											<use xlink:href="#html5-icon"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20px" height="20px">
+											<use xlink:href="#css3-icon"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20px" height="20px">
+											<use
+												xlink:href="#jquery-icon"
+											></use>
+										</svg>
+									</li>
+								</ul>
+							</div>
+							<p class="project-description">
+								Simple interactive quiz app featuring multiple
+								choice questions related to the online CCG
+								Hearthstone
+							</p>
+							<ul class="project-links">
+								<li>
+									<span class="label">App</span>
+									<a
+										href="https://codybarr-thinkful.github.io/quiz-app"
+									>
+										https://codybarr-thinkful.github.io/quiz-app
+									</a>
+								</li>
+								<li>
+									<span class="label">Repo</span>
+									<a
+										href="https://github.com/codybarr-thinkful/quiz-app"
+									>
+										https://github.com/codybarr-thinkful/quiz-app
+									</a>
+								</li>
+							</ul>
+						</article>
+					</div>
 				</div>
 			</section>
 		</main>

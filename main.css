@@ -2,6 +2,7 @@
 	--sm: 640px;
 	--md: 768px;
 	--lg: 1024px;
+	--xl: 1280px;
 
 	--spacing-xs: 0.5rem;
 	--spacing-sm: 1rem;
@@ -27,6 +28,7 @@ html {
 	letter-spacing: 0.025em;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
+	height: 100%;
 }
 
 @supports (font-variation-settings: normal) {
@@ -37,6 +39,7 @@ html {
 
 body {
 	height: 100vh;
+	min-height: 100%;
 }
 
 img {
@@ -46,7 +49,7 @@ img {
 
 .container {
 	margin: 0 auto;
-	max-width: var(--md);
+	max-width: var(--lg);
 	padding: var(--spacing-lg);
 }
 
@@ -75,6 +78,10 @@ header.hero {
 	padding-bottom: var(--spacing-md);
 }
 
+header.hero footer {
+	display: none;
+}
+
 figure.avatar {
 	display: inline-block;
 }
@@ -88,31 +95,10 @@ figure.avatar img {
 	background-color: #f9f9f9;
 }
 
-/* .projects figure {
-	padding-top: 60%;
-	position: relative;
-}
-
-.projects figure img {
-	width: 100%;
-	height: 100%;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-} */
-
 .projects img {
 	object-fit: cover;
 	height: 250px;
 	border-radius: 0.5rem;
-}
-
-@media (min-width: 768px) {
-	.projects img {
-		height: 350px;
-	}
 }
 
 .projects .title-and-tech-used {
@@ -194,4 +180,60 @@ footer a:hover {
 
 footer p.email {
 	padding-bottom: 0;
+}
+
+/* Tablet Styles */
+/* maybe make portfolio articles here 2 tiles wide? */
+
+/* @media (min-width: 768px) {
+	.projects article {
+		border: none !important;
+	}
+
+	.projects .project-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.projects article {
+		padding: var(--spacing-md) !important;
+		margin: 0 !important;
+		width: 50%;
+	}
+} */
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+	body {
+		display: flex;
+		height: auto;
+	}
+
+	header.hero {
+		position: relative;
+		width: 35vw;
+		background-attachment: scroll;
+	}
+
+	header.hero > .container {
+		position: sticky;
+		top: calc(var(--spacing-md) * 2);
+	}
+
+	header.hero footer {
+		display: block;
+		position: fixed;
+		width: 35vw;
+		bottom: 0;
+		font-size: var(--text-base);
+	}
+
+	main {
+		flex-grow: 1;
+	}
+
+	body > footer {
+		display: none;
+	}
 }
