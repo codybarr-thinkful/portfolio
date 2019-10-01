@@ -141,10 +141,26 @@ figure.avatar img {
 	color: #444444;
 }
 
+.projects figure {
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+}
+
 .projects img {
 	object-fit: cover;
 	height: 250px;
-	border-radius: 0.5rem;
+	transition: ease-in-out 0.3s;
+}
+
+.projects a img {
+	display: block;
+}
+
+.projects a:hover img {
+	transform: scale(1.2);
+	opacity: 0.7;
 }
 
 .projects .title-and-tech-used {
@@ -154,8 +170,8 @@ figure.avatar img {
 }
 
 .projects article:not(:first-of-type) {
-	padding-top: var(--spacing-md);
-	margin-top: var(--spacing-md);
+	padding-top: var(--spacing-lg);
+	margin-top: var(--spacing-lg);
 	border-top: 1px solid #ccc;
 }
 
@@ -262,7 +278,7 @@ footer p.email {
 		height: auto;
 	}
 
-	.container {
+	.container:not(:last-child) {
 		padding-bottom: var(--spacing-lg);
 	}
 
