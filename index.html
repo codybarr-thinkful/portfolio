@@ -6,148 +6,253 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Cody Barr | Portfolio</title>
 
-		<link href="https://unpkg.com/tailwindcss/dist/base.css" rel="stylesheet" />
+		<link
+			href="https://unpkg.com/tailwindcss/dist/base.css"
+			rel="stylesheet"
+		/>
+
 		<link
 			href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body>
 		<header class="hero">
 			<div class="container">
-				<p>{hero section}</p>
-				<p>avatar image</p>
+				<figure class="avatar">
+					<img
+						src="images/avatar.jpg"
+						width="100px"
+						height="100px"
+						alt="Cody Barr's avatar"
+					/>
+				</figure>
 				<section class="headline">
 					<p>
-						headline
+						Howdy! 👋🏻 I'm Cody, a recent coding bootcamp graduate
+						and aspiring front-end engineer.
 					</p>
 				</section>
 			</div>
+			<footer role="content-info">
+				<div class="container">
+					<section class="social-links">
+						<a
+							href="https://github.com/codybarr"
+							aria-label="link to cody's github"
+						>
+							<svg width="50px" height="50px">
+								<use xlink:href="#github-icon"></use>
+							</svg>
+						</a>
+						<a
+							href="https://linkedin.com/in/codybarr"
+							aria-label="link to cody's linked in profile"
+						>
+							<svg width="50px" height="50px">
+								<use xlink:href="#linkedin-icon"></use>
+							</svg>
+						</a>
+					</section>
+					<p class="email">
+						<a href="mailto:cody.barr@gmail.com"
+							>cody.barr@gmail.com</a
+						>
+					</p>
+				</div>
+			</footer>
+			<svg
+				class="triangle mobile header-triangle"
+				preserveAspectRatio="none"
+				viewBox="0 0 100 100"
+			>
+				<polygon points="0,100 100,50 100,100" />
+			</svg>
+			<svg
+				class="triangle desktop hero-triangle"
+				preserveAspectRatio="none"
+				viewBox="0 0 100 100"
+			>
+				<polygon points="100,0 100,100 50,100" />
+			</svg>
 		</header>
 		<main>
 			<section class="bio">
 				<div class="container">
 					<h2>Bio</h2>
 					<p>
-						Id nulla nulla do nisi proident Lorem adipisicing fugiat dolor culpa
-						eiusmod voluptate fugiat. Do tempor eiusmod duis ea deserunt sit
-						quis. Officia dolor quis deserunt consectetur. Consequat consectetur
-						magna incididunt deserunt dolor aliqua quis. Adipisicing laboris
-						voluptate laborum cupidatat dolore et consequat nulla est minim
-						labore.
+						I've been coding on and off my whole life but recently
+						took the plunge with
+						<a href="https://thinkful.com">Thinkful</a> to round out
+						my rough edges. I like coding because it's basically
+						magic ✨ and magic is fun 🧙🏻‍. Lately I've been playing
+						around with Vue.js, Gridsome, GraphQL, and TailwindCSS.
 					</p>
 					<p>
-						Pariatur velit deserunt aliquip commodo. Sunt consequat aute esse
-						aliquip adipisicing adipisicing nostrud. Voluptate nostrud minim id
-						minim nisi cillum ex.
+						When I'm not coding I enjoy watching movies, playing
+						with and teaching my four kiddos (shameless
+						homeschoolers), and Hearthstone.
 					</p>
 				</div>
+				<svg
+					class="triangle mobile bio-triangle"
+					preserveAspectRatio="none"
+					viewBox="0 0 100 100"
+				>
+					<polygon points="0,100 100,50 100,100" />
+				</svg>
 			</section>
 			<section class="projects">
 				<div class="container">
 					<h2>Projects</h2>
-					<article>
-						<figure class="screenshot">
-							<img src="images/screenshot.png" alt="Project 1 screenshot" />
-						</figure>
-						<div class="title-and-tech-used">
-							<h3>Project 1</h3>
-							<ul class="tech-used">
-								<li title="html5">
-									<svg width="25px" height="25px">
-										<use xlink:href="#html5-icon"></use>
-									</svg>
+					<div class="project-list">
+						<article>
+							<figure class="screenshot">
+								<a
+									href="https://codybarr-thinkful.github.io/quiz-app"
+									aria-label="link to quiz app"
+								>
+									<img
+										src="images/quiz-app.png"
+										alt="Quiz App screenshot"
+								/></a>
+							</figure>
+							<div class="title-and-tech-used">
+								<h3>Quiz App</h3>
+								<ul class="tech-used">
+									<li title="html5">
+										<svg width="25px" height="25px">
+											<use xlink:href="#html5-icon"></use>
+										</svg>
+									</li>
+									<li title="css3">
+										<svg width="20px" height="20px">
+											<use xlink:href="#css3-icon"></use>
+										</svg>
+									</li>
+									<li title="jquery">
+										<svg width="20px" height="20px">
+											<use
+												xlink:href="#jquery-icon"
+											></use>
+										</svg>
+									</li>
+								</ul>
+							</div>
+							<p class="project-description">
+								Simple interactive quiz app featuring multiple
+								choice questions related to the online CCG
+								Hearthstone.
+							</p>
+							<ul class="project-links">
+								<li>
+									<span class="label">App</span
+									><a
+										href="https://codybarr-thinkful.github.io/quiz-app"
+										>https://codybarr-thinkful.github.io/quiz-app</a
+									>
 								</li>
-								<li title="css3">
-									<svg width="20px" height="20px">
-										<use xlink:href="#css3-icon"></use>
-									</svg>
-								</li>
-								<li title="jquery">
-									<svg width="20px" height="20px">
-										<use xlink:href="#jquery-icon"></use>
-									</svg>
+								<li>
+									<span class="label">Repo</span>
+									<a
+										href="https://github.com/codybarr-thinkful/quiz-app"
+										>https://github.com/codybarr-thinkful/quiz-app</a
+									>
 								</li>
 							</ul>
-						</div>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-							maxime sint quae. Ullam nulla eveniet vel consequuntur veniam
-							dolor est officia accusantium corporis? Aut qui alias dolorem
-							quibusdam aperiam esse.
-						</p>
-						<ul class="project-links">
-							<li>
-								<span class="label">App</span
-								><a href="https://codybarr-thinkful.github.io/project1"
-									>https://codybarr-thinkful.github.io/project1</a
+						</article>
+						<article>
+							<figure class="screenshot">
+								<a
+									href="https://codybarr-thinkful.github.io/quiz-app"
+									aria-label="link to project 2"
 								>
-							</li>
-							<li>
-								<span class="label">Repo</span>
-								<a href="https://github.com/codybarr-thinkful/project1"
-									>https://github.com/codybarr-thinkful/project1</a
-								>
-							</li>
-						</ul>
-					</article>
-					<article>
-						<figure class="screenshot">
-							<img src="images/screenshot.png" alt="Project 2 screenshot" />
-						</figure>
-						<div class="title-and-tech-used">
-							<h3>Project 2</h3>
-							<ul class="tech-used">
-								<li title="html5">
-									<svg width="25px" height="25px">
-										<use xlink:href="#html5-icon"></use>
-									</svg>
+									<img
+										src="images/screenshot.png"
+										alt="Project 2 screenshot"
+								/></a>
+							</figure>
+							<div class="title-and-tech-used">
+								<h3>Project 2</h3>
+								<ul class="tech-used">
+									<li title="html5">
+										<svg width="25px" height="25px">
+											<use xlink:href="#html5-icon"></use>
+										</svg>
+									</li>
+									<li title="css3">
+										<svg width="20px" height="20px">
+											<use xlink:href="#css3-icon"></use>
+										</svg>
+									</li>
+									<li title="jquery">
+										<svg width="20px" height="20px">
+											<use
+												xlink:href="#jquery-icon"
+											></use>
+										</svg>
+									</li>
+								</ul>
+							</div>
+							<p class="project-description">
+								Simple interactive quiz app featuring multiple
+								choice questions related to the online CCG
+								Hearthstone
+							</p>
+							<ul class="project-links">
+								<li>
+									<span class="label">App</span>
+									<a
+										href="https://codybarr-thinkful.github.io/quiz-app"
+									>
+										https://codybarr-thinkful.github.io/quiz-app
+									</a>
 								</li>
-								<li title="css3">
-									<svg width="20px" height="20px">
-										<use xlink:href="#css3-icon"></use>
-									</svg>
-								</li>
-								<li title="jquery">
-									<svg width="20px" height="20px">
-										<use xlink:href="#jquery-icon"></use>
-									</svg>
+								<li>
+									<span class="label">Repo</span>
+									<a
+										href="https://github.com/codybarr-thinkful/quiz-app"
+									>
+										https://github.com/codybarr-thinkful/quiz-app
+									</a>
 								</li>
 							</ul>
-						</div>
-						<p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-							maxime sint quae. Ullam nulla eveniet vel consequuntur veniam
-							dolor est officia accusantium corporis? Aut qui alias dolorem
-							quibusdam aperiam esse.
-						</p>
-						<ul class="project-links">
-							<li>
-								<span class="label">App</span>
-								<a href="https://codybarr-thinkful.github.io/project2">
-									https://codybarr-thinkful.github.io/project2
-								</a>
-							</li>
-							<li>
-								<span class="label">Repo</span>
-								<a href="https://github.com/codybarr-thinkful/project2">
-									https://github.com/codybarr-thinkful/project2
-								</a>
-							</li>
-						</ul>
-					</article>
+						</article>
+					</div>
 				</div>
+				<svg
+					class="triangle mobile projects-triangle"
+					preserveAspectRatio="none"
+					viewBox="0 0 100 100"
+				>
+					<polygon points="0,100 100,50 100,100" />
+				</svg>
 			</section>
 		</main>
 		<footer role="content-info">
 			<div class="container">
-				<p>{footer}</p>
 				<section class="social-links">
-					social icons
+					<a
+						href="https://github.com/codybarr"
+						aria-label="link to cody's github"
+					>
+						<svg width="50px" height="50px">
+							<use xlink:href="#github-icon"></use>
+						</svg>
+					</a>
+					<a
+						href="https://linkedin.com/in/codybarr"
+						aria-label="link to cody's linked in profile"
+					>
+						<svg width="50px" height="50px">
+							<use xlink:href="#linkedin-icon"></use>
+						</svg>
+					</a>
 				</section>
 				<p class="email">
-					email address
+					<a href="mailto:cody.barr@gmail.com">cody.barr@gmail.com</a>
 				</p>
 			</div>
 		</footer>

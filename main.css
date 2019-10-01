@@ -2,11 +2,13 @@
 	--sm: 640px;
 	--md: 768px;
 	--lg: 1024px;
+	--xl: 1280px;
 
 	--spacing-xs: 0.5rem;
 	--spacing-sm: 1rem;
 	--spacing-md: 2rem;
 	--spacing-lg: 3rem;
+	--spacing-xl: 9rem;
 
 	--full: 9999px;
 
@@ -29,10 +31,24 @@ html {
 	letter-spacing: 0.025em;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
+	height: 100%;
 }
 
 body {
 	height: 100vh;
+	min-height: 100%;
+}
+
+a {
+	color: var(--color-pop);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+svg {
+	fill: currentColor;
 }
 
 a {
@@ -52,18 +68,12 @@ img {
 	display: block;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: var(--md);
-	padding: var(--spacing-lg);
-}
-
 h1,
 h2 {
 	text-align: center;
 	text-transform: uppercase;
 	padding: var(--spacing-md);
-	font-size: var(--text-lg);
+	font-size: var(--text-xl);
 	color: var(--color-pop);
 }
 
@@ -72,12 +82,48 @@ p {
 	line-height: 2;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: var(--md);
+	padding: var(--spacing-lg);
+}
+
+.container:not(:last-child) {
+	padding-bottom: var(--spacing-xl);
+}
+
+.triangle {
+	height: 5rem;
+	width: 100%;
+	fill: currentColor;
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+.triangle.desktop {
+	display: none;
+}
+
 header.hero {
+	background: center / cover no-repeat url('images/beach-background.jpg')
+		rgba(0, 0, 0, 0.4);
+	background-attachment: fixed;
+	color: white;
 	font-size: var(--text-md);
 	text-align: center;
 	background-blend-mode: overlay;
 	padding-top: var(--spacing-md);
 	padding-bottom: var(--spacing-md);
+	position: relative;
+}
+
+header.hero footer {
+	display: none;
+}
+
+main {
+	position: relative;
 }
 
 figure.avatar {
@@ -90,23 +136,43 @@ figure.avatar img {
 }
 
 .bio {
+	position: relative;
 	font-size: var(--text-md);
+}
+
+.triangle.bio-triangle {
+	color: #f9f9f9;
 }
 
 .projects {
 	background-color: #f9f9f9;
+	position: relative;
+}
+
+.triangle.projects-triangle {
+	color: #444444;
+}
+
+.projects figure {
+	border-radius: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	background-color: black;
 }
 
 .projects img {
 	object-fit: cover;
 	height: 250px;
-	border-radius: 0.5rem;
+	transition: ease-in-out 0.3s;
 }
 
-@media (min-width: 768px) {
-	.projects img {
-		height: 350px;
-	}
+.projects a img {
+	display: block;
+}
+
+.projects a:hover img {
+	transform: scale(1.2);
+	opacity: 0.7;
 }
 
 .projects .title-and-tech-used {
@@ -116,8 +182,8 @@ figure.avatar img {
 }
 
 .projects article:not(:first-of-type) {
-	padding-top: var(--spacing-md);
-	margin-top: var(--spacing-md);
+	padding-top: var(--spacing-lg);
+	margin-top: var(--spacing-lg);
 	border-top: 1px solid #ccc;
 }
 
@@ -183,10 +249,100 @@ footer .social-links a {
 	padding: 0 var(--spacing-xs);
 }
 
+footer a {
+	color: white;
+}
+
 footer a:hover {
 	color: black;
+	text-decoration: none;
 }
 
 footer p.email {
 	padding-bottom: 0;
+}
+
+/* Tablet Styles */
+/* maybe make portfolio articles here 2 tiles wide? */
+
+/* @media (min-width: 768px) {
+	.projects article {
+		border: none !important;
+	}
+
+	.projects .project-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.projects article {
+		padding: var(--spacing-md) !important;
+		margin: 0 !important;
+		width: 50%;
+	}
+} */
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+	body {
+		display: flex;
+		height: auto;
+	}
+
+	.container:not(:last-child) {
+		padding-bottom: var(--spacing-lg);
+	}
+
+	.triangle.mobile {
+		display: none;
+	}
+
+	header.hero {
+		position: relative;
+		width: 35vw;
+		background-attachment: scroll;
+	}
+
+	.triangle.hero-triangle {
+		display: block;
+		top: 0;
+		width: 5rem;
+		left: 35vw;
+		height: 100vh;
+		width: 5rem;
+		position: fixed;
+		margin-left: -5rem;
+	}
+
+	header.hero > .container {
+		position: sticky;
+		top: calc(var(--spacing-md) * 2);
+	}
+
+	header.hero footer {
+		display: block;
+		width: 35vw;
+		bottom: 0;
+		font-size: var(--text-base);
+	}
+
+	header.hero footer .container {
+		position: fixed;
+		bottom: 0;
+		width: 35vw;
+		background-color: #00000044;
+	}
+
+	main {
+		flex-grow: 1;
+	}
+
+	.projects {
+		background-color: white;
+	}
+
+	body > footer {
+		display: none;
+	}
 }
