@@ -263,24 +263,12 @@ footer p.email {
 }
 
 /* Tablet Styles */
-/* maybe make portfolio articles here 2 tiles wide? */
 
-/* @media (min-width: 768px) {
-	.projects article {
-		border: none !important;
+@media (min-width: 640px) {
+	.projects img {
+		height: 350px;
 	}
-
-	.projects .project-list {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.projects article {
-		padding: var(--spacing-md) !important;
-		margin: 0 !important;
-		width: 50%;
-	}
-} */
+}
 
 /* Desktop Styles */
 
