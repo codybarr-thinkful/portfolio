@@ -72,7 +72,7 @@ h1,
 h2 {
 	text-align: center;
 	text-transform: uppercase;
-	padding: var(--spacing-md);
+	padding: var(--spacing-md) 0;
 	font-size: var(--text-xl);
 	color: var(--color-pop);
 }
@@ -118,7 +118,7 @@ header.hero {
 	position: relative;
 }
 
-header.hero footer {
+header.hero aside {
 	display: none;
 }
 
@@ -211,6 +211,7 @@ figure.avatar img {
 }
 
 .projects ul.project-links a {
+	word-break: break-all;
 	margin-left: var(--spacing-sm);
 }
 
@@ -231,29 +232,38 @@ figure.avatar img {
 
 footer {
 	background-color: #444444;
+}
+
+footer,
+aside {
 	color: white;
 	text-align: center;
 }
 
-footer svg {
+footer svg,
+aside svg {
 	display: inline-block;
 	fill: currentColor;
 }
 
-footer .social-links {
+footer .social-links,
+aside .social-links {
 	display: inline-flex;
 	align-items: center;
 }
 
-footer .social-links a {
+footer .social-links a,
+aside .social-links a {
 	padding: 0 var(--spacing-xs);
 }
 
-footer a {
+footer a,
+aside a {
 	color: white;
 }
 
-footer a:hover {
+footer a:hover,
+aside a:hover {
 	color: black;
 	text-decoration: none;
 }
@@ -308,14 +318,14 @@ footer p.email {
 		top: calc(var(--spacing-md) * 2);
 	}
 
-	header.hero footer {
+	header.hero aside {
 		display: block;
 		width: 35vw;
 		bottom: 0;
 		font-size: var(--text-base);
 	}
 
-	header.hero footer .container {
+	header.hero aside .container {
 		position: fixed;
 		bottom: 0;
 		width: 35vw;
@@ -330,7 +340,7 @@ footer p.email {
 		background-color: white;
 	}
 
-	body > footer {
+	footer {
 		display: none;
 	}
 }
