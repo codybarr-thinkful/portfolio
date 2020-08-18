@@ -51,18 +51,6 @@ svg {
 	fill: currentColor;
 }
 
-a {
-	color: var(--color-pop);
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-svg {
-	fill: currentColor;
-}
-
 img {
 	width: 100%;
 	display: block;
@@ -116,6 +104,10 @@ header.hero {
 	padding-top: var(--spacing-md);
 	padding-bottom: var(--spacing-md);
 	position: relative;
+}
+
+header.hero p.headline a {
+	color: white;
 }
 
 header.hero aside {
