@@ -1,518 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta
-			name="Description"
-			content="Heyo, Cody here, this is my personal portfolio!"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="Description"
+      content="Heyo, Cody here, this is my personal portfolio!"
+    />
 
-		<title>Cody Barr | Portfolio</title>
-		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <title>Cody Barr | Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
-		<link
-			href="https://unpkg.com/tailwindcss/dist/base.css"
-			rel="stylesheet"
-		/>
+    <link href="https://unpkg.com/tailwindcss/dist/base.css" rel="stylesheet" />
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap"
-			rel="stylesheet"
-		/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap"
+      rel="stylesheet"
+    />
 
-		<link rel="stylesheet" href="main.css" />
-	</head>
-	<body>
-		<header class="hero">
-			<div class="container">
-				<figure class="avatar">
-					<img
-						src="images/avatar.jpg"
-						width="100"
-						height="100"
-						alt="Cody Barr's avatar"
-					/>
-				</figure>
-				<p class="headline">
-					Howdy! 👋🏻 I'm Cody, life-long coder and current Senior
-					Software Engineer
-					<a
-						href="https://twitter.com/Travelers"
-						target="_blank"
-						rel="noopener noreferrer"
-						>@Travelers</a
-					>.
-				</p>
-			</div>
-			<aside>
-				<div class="container">
-					<div class="social-links">
-						<a
-							href="https://github.com/codybarr"
-							target="_blank"
-							rel="noopener"
-							aria-label="link to cody's github"
-						>
-							<svg width="50px" height="50px">
-								<use xlink:href="#github-icon"></use>
-							</svg>
-						</a>
-						<a
-							href="https://linkedin.com/in/codybarr"
-							target="_blank"
-							rel="noopener"
-							aria-label="link to cody's linked in profile"
-						>
-							<svg width="50px" height="50px">
-								<use xlink:href="#linkedin-icon"></use>
-							</svg>
-						</a>
-					</div>
-					<p class="email">
-						<a href="mailto:cody.barr@gmail.com"
-							>cody.barr@gmail.com</a
-						>
-					</p>
-				</div>
-			</aside>
-			<svg
-				class="triangle mobile header-triangle"
-				preserveaspectratio="none"
-				viewbox="0 0 100 100"
-			>
-				<polygon points="0,100 100,50 100,100" />
-			</svg>
-			<svg
-				class="triangle desktop hero-triangle"
-				preserveaspectratio="none"
-				viewbox="0 0 100 100"
-			>
-				<polygon points="100,0 100,100 50,100" />
-			</svg>
-		</header>
-		<main>
-			<section class="bio">
-				<div class="container">
-					<h2>Bio</h2>
-					<p>
-						I <strong>love coding</strong> because it's basically
-						magic ✨ and magic is fun! 🧙🏻‍ Lately I've been playing
-						around with Vue.js, Gridsome, GraphQL, and TailwindCSS.
-					</p>
-					<p>
-						<strong>When I'm not coding</strong> I enjoy watching
-						movies, playing with and teaching my four kiddos
-						(shameless homeschoolers), and Hearthstone.
-					</p>
-				</div>
-				<svg
-					class="triangle mobile bio-triangle"
-					preserveaspectratio="none"
-					viewbox="0 0 100 100"
-				>
-					<polygon points="0,100 100,50 100,100" />
-				</svg>
-			</section>
-			<section class="projects">
-				<div class="container">
-					<h2>Projects</h2>
-					<div class="project-list">
-						<article>
-							<figure class="screenshot">
-								<a
-									href="https://coventrypca.church"
-									aria-label="link to coventrypca.church"
-									target="_blank"
-									rel="noopener"
-								>
-									<img
-										src="images/coventrypca.church.png"
-										alt="coventrypca.church screenshot"
-								/></a>
-							</figure>
-							<div class="title-and-tech-used">
-								<h3>CoventryPCA.church</h3>
-								<ul class="tech-used">
-									<li title="html5">
-										<svg width="25px" height="25px">
-											<use xlink:href="#html5-icon"></use>
-										</svg>
-									</li>
-									<li title="css3">
-										<svg width="20px" height="20px">
-											<use xlink:href="#css3-icon"></use>
-										</svg>
-									</li>
-									<li title="vue.js">
-										<svg width="20px" height="20px">
-											<use xlink:href="#vue-icon"></use>
-										</svg>
-									</li>
-									<li title="gridsome">
-										<svg width="20px" height="20px">
-											<use
-												xlink:href="#gridsome-icon"
-											></use>
-										</svg>
-									</li>
-									<li title="tailwindcss">
-										<svg width="20px" height="20px">
-											<use
-												xlink:href="#tailwind-icon"
-											></use>
-										</svg>
-									</li>
-								</ul>
-							</div>
-							<p class="project-description">
-								PCC is my home church and I redesigned their
-								site from the ground up using Gridsome and
-								Tailwind (with some Bulma), and NetlifyCMS. The
-								site is extremely performant, uses progressive
-								images, features a sleek & modern design, and
-								implements an infinite loading technique for
-								various content.
-							</p>
-							<ul class="project-links">
-								<li>
-									<span class="label">App</span
-									><a
-										href="https://coventrypca.church"
-										target="_blank"
-										rel="noopener"
-										>https://coventrypca.church</a
-									>
-								</li>
-								<li>
-									<span class="label">Repo</span>
-									<a href="#">Private</a>
-								</li>
-							</ul>
-						</article>
-						<article>
-							<figure class="screenshot">
-								<a
-									href="https://markdownly.codybarr.dev"
-									aria-label="link to markdownly"
-									target="_blank"
-									rel="noopener"
-								>
-									<img
-										src="images/markdownly.png"
-										alt="markdownly screenshot"
-								/></a>
-							</figure>
-							<div class="title-and-tech-used">
-								<h3>Markdownly</h3>
-								<ul class="tech-used">
-									<li title="html5">
-										<svg width="25px" height="25px">
-											<use xlink:href="#html5-icon"></use>
-										</svg>
-									</li>
-									<li title="css3">
-										<svg width="20px" height="20px">
-											<use xlink:href="#css3-icon"></use>
-										</svg>
-									</li>
-									<li title="vue.js">
-										<svg width="20px" height="20px">
-											<use xlink:href="#vue-icon"></use>
-										</svg>
-									</li>
-									<li title="firebase">
-										<svg width="20px" height="20px">
-											<use
-												xlink:href="#firebase-icon"
-											></use>
-										</svg>
-									</li>
-									<li title="bulma">
-										<svg width="20px" height="20px">
-											<use xlink:href="#bulma-icon"></use>
-										</svg>
-									</li>
-								</ul>
-							</div>
-							<p class="project-description">
-								Simple pastebin-like web app with built-in
-								markdown support. You can create anonymous
-								public/private read-only "snips" or login with
-								Google OAuth to manage / edit your personal
-								snips.
-							</p>
-							<ul class="project-links">
-								<li>
-									<span class="label">App</span
-									><a
-										href="https://markdownly.codybarr.dev"
-										target="_blank"
-										rel="noopener"
-										>https://markdownly.codybarr.dev</a
-									>
-								</li>
-								<li>
-									<span class="label">Repo</span>
-									<a
-										href="https://github.com/codybarr/markdownly"
-										target="_blank"
-										rel="noopener"
-										>https://github.com/codybarr/markdownly</a
-									>
-								</li>
-							</ul>
-						</article>
-						<article>
-							<figure class="screenshot">
-								<a
-									href="https://codybarr-thinkful.github.io/scrabble-solver"
-									aria-label="link to scrabble solver"
-									target="_blank"
-									rel="noopener"
-								>
-									<img
-										src="images/scrabble-solver.png"
-										alt="Scrabble Solver screenshot"
-								/></a>
-							</figure>
-							<div class="title-and-tech-used">
-								<h3>Scrabble Solver</h3>
-								<ul class="tech-used">
-									<li title="html5">
-										<svg width="25px" height="25px">
-											<use xlink:href="#html5-icon"></use>
-										</svg>
-									</li>
-									<li title="css3">
-										<svg width="20px" height="20px">
-											<use xlink:href="#css3-icon"></use>
-										</svg>
-									</li>
-									<li title="jquery">
-										<svg width="20px" height="20px">
-											<use
-												xlink:href="#jquery-icon"
-											></use>
-										</svg>
-									</li>
-									<li title="tailwindcss">
-										<svg width="20px" height="20px">
-											<use
-												xlink:href="#tailwind-icon"
-											></use>
-										</svg>
-									</li>
-								</ul>
-							</div>
-							<p class="project-description">
-								Simple scrabble solver app with built in
-								dictionary definitions. Allows for sorting by
-								word length and scrabble score.
-							</p>
-							<ul class="project-links">
-								<li>
-									<span class="label">App</span
-									><a
-										href="https://scrabble.codybarr.dev"
-										target="_blank"
-										rel="noopener"
-										>https://scrabble.codybarr.dev</a
-									>
-								</li>
-								<li>
-									<span class="label">Repo</span>
-									<a
-										href="https://github.com/codybarr-thinkful/scrabble-solver"
-										target="_blank"
-										rel="noopener"
-										>https://github.com/codybarr-thinkful/scrabble-solver</a
-									>
-								</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-				<svg
-					class="triangle mobile projects-triangle"
-					preserveaspectratio="none"
-					viewbox="0 0 100 100"
-				>
-					<polygon points="0,100 100,50 100,100" />
-				</svg>
-			</section>
-		</main>
-		<footer>
-			<div class="container">
-				<div class="social-links">
-					<a
-						href="https://github.com/codybarr"
-						target="_blank"
-						rel="noopener"
-						aria-label="link to cody's github"
-					>
-						<svg width="50px" height="50px">
-							<use xlink:href="#github-icon"></use>
-						</svg>
-					</a>
-					<a
-						href="https://linkedin.com/in/codybarr"
-						target="_blank"
-						rel="noopener"
-						aria-label="link to cody's linked in profile"
-					>
-						<svg width="50px" height="50px">
-							<use xlink:href="#linkedin-icon"></use>
-						</svg>
-					</a>
-				</div>
-				<p class="email">
-					<a href="mailto:cody.barr@gmail.com">cody.barr@gmail.com</a>
-				</p>
-			</div>
-		</footer>
-		<div style="display: none;">
-			<svg
-				id="jquery-icon"
-				viewbox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M18.9733 7.5425C17.0392 9.165 14.1425 8.90833 12.52 6.97416C10.8883 5.03083 11.145 2.125 13.0792 0.52083L13.5467 0.172497C11.9975 1.84083 11.8967 4.44416 13.4 6.25C14.8942 8.02833 17.4792 8.37667 19.395 7.13916L18.9733 7.5425ZM17.3417 11.2917C14.4358 13.7392 10.1 13.3633 7.66166 10.4483C5.21416 7.5425 5.59916 3.20666 8.505 0.749997L9.34833 0.16333C7.13 2.66583 7.02 6.48833 9.23833 9.12833C11.4567 11.75 15.2333 12.3275 18.0842 10.5767L17.3417 11.2917ZM16.3058 15.765C12.2358 19.1842 6.15833 18.6525 2.73916 14.5733C-0.670836 10.5033 -0.13917 4.41666 3.93083 1.01583L4.94833 0.291664C1.73083 3.775 1.52916 9.21083 4.67333 12.96C7.8175 16.7 13.2075 17.4517 17.2133 14.8942L16.3058 15.765Z"
-				/>
-			</svg>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <figure class="avatar">
+          <img
+            src="images/avatar.jpg"
+            width="100"
+            height="100"
+            alt="Cody Barr's avatar"
+          />
+        </figure>
+        <p class="headline">
+          Howdy! 👋🏻 I'm Cody, life-long coder and current Frontend Developer
+          <a
+            href="https://twitter.com/dominos"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@Dominos</a
+          >.
+        </p>
+      </div>
+      <aside>
+        <div class="container">
+          <div class="social-links">
+            <a
+              href="https://github.com/codybarr"
+              target="_blank"
+              rel="noopener"
+              aria-label="link to cody's github"
+            >
+              <svg width="50px" height="50px">
+                <use xlink:href="#github-icon"></use>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/codybarr"
+              target="_blank"
+              rel="noopener"
+              aria-label="link to cody's linked in profile"
+            >
+              <svg width="50px" height="50px">
+                <use xlink:href="#linkedin-icon"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="email">
+            <a href="mailto:cody.barr@gmail.com">cody.barr@gmail.com</a>
+          </p>
+        </div>
+      </aside>
+      <svg
+        class="triangle mobile header-triangle"
+        preserveaspectratio="none"
+        viewbox="0 0 100 100"
+      >
+        <polygon points="0,100 100,50 100,100" />
+      </svg>
+      <svg
+        class="triangle desktop hero-triangle"
+        preserveaspectratio="none"
+        viewbox="0 0 100 100"
+      >
+        <polygon points="100,0 100,100 50,100" />
+      </svg>
+    </header>
+    <main>
+      <section class="bio">
+        <div class="container">
+          <h2>Bio</h2>
+          <p>
+            I <strong>love coding</strong> because it's basically magic ✨ and
+            magic is fun! 🧙🏻‍ Lately I've been playing around with Vue.js,
+            Gridsome, GraphQL, and TailwindCSS.
+          </p>
+          <p>
+            <strong>When I'm not coding</strong> I enjoy watching movies,
+            playing with and teaching my four kiddos (shameless homeschoolers),
+            and Hearthstone.
+          </p>
+        </div>
+        <svg
+          class="triangle mobile bio-triangle"
+          preserveaspectratio="none"
+          viewbox="0 0 100 100"
+        >
+          <polygon points="0,100 100,50 100,100" />
+        </svg>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <article>
+              <figure class="screenshot">
+                <a
+                  href="https://coventrypca.church"
+                  aria-label="link to coventrypca.church"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/coventrypca.church.png"
+                    alt="coventrypca.church screenshot"
+                /></a>
+              </figure>
+              <div class="title-and-tech-used">
+                <h3>CoventryPCA.church</h3>
+                <ul class="tech-used">
+                  <li title="html5">
+                    <svg width="25px" height="25px">
+                      <use xlink:href="#html5-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="css3">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#css3-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="vue.js">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#vue-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="gridsome">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#gridsome-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="tailwindcss">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#tailwind-icon"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                PCC is my home church and I redesigned their site from the
+                ground up using Gridsome and Tailwind (with some Bulma), and
+                NetlifyCMS. The site is extremely performant, uses progressive
+                images, features a sleek & modern design, and implements an
+                infinite loading technique for various content.
+              </p>
+              <ul class="project-links">
+                <li>
+                  <span class="label">App</span
+                  ><a
+                    href="https://coventrypca.church"
+                    target="_blank"
+                    rel="noopener"
+                    >https://coventrypca.church</a
+                  >
+                </li>
+                <li>
+                  <span class="label">Repo</span>
+                  <a href="#">Private</a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <figure class="screenshot">
+                <a
+                  href="https://markdownly.codybarr.dev"
+                  aria-label="link to markdownly"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/markdownly.png" alt="markdownly screenshot"
+                /></a>
+              </figure>
+              <div class="title-and-tech-used">
+                <h3>Markdownly</h3>
+                <ul class="tech-used">
+                  <li title="html5">
+                    <svg width="25px" height="25px">
+                      <use xlink:href="#html5-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="css3">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#css3-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="vue.js">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#vue-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="firebase">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#firebase-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="bulma">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#bulma-icon"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Simple pastebin-like web app with built-in markdown support. You
+                can create anonymous public/private read-only "snips" or login
+                with Google OAuth to manage / edit your personal snips.
+              </p>
+              <ul class="project-links">
+                <li>
+                  <span class="label">App</span
+                  ><a
+                    href="https://markdownly.codybarr.dev"
+                    target="_blank"
+                    rel="noopener"
+                    >https://markdownly.codybarr.dev</a
+                  >
+                </li>
+                <li>
+                  <span class="label">Repo</span>
+                  <a
+                    href="https://github.com/codybarr/markdownly"
+                    target="_blank"
+                    rel="noopener"
+                    >https://github.com/codybarr/markdownly</a
+                  >
+                </li>
+              </ul>
+            </article>
+            <article>
+              <figure class="screenshot">
+                <a
+                  href="https://codybarr-thinkful.github.io/scrabble-solver"
+                  aria-label="link to scrabble solver"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/scrabble-solver.png"
+                    alt="Scrabble Solver screenshot"
+                /></a>
+              </figure>
+              <div class="title-and-tech-used">
+                <h3>Scrabble Solver</h3>
+                <ul class="tech-used">
+                  <li title="html5">
+                    <svg width="25px" height="25px">
+                      <use xlink:href="#html5-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="css3">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#css3-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="jquery">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#jquery-icon"></use>
+                    </svg>
+                  </li>
+                  <li title="tailwindcss">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="#tailwind-icon"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Simple scrabble solver app with built in dictionary definitions.
+                Allows for sorting by word length and scrabble score.
+              </p>
+              <ul class="project-links">
+                <li>
+                  <span class="label">App</span
+                  ><a
+                    href="https://scrabble.codybarr.dev"
+                    target="_blank"
+                    rel="noopener"
+                    >https://scrabble.codybarr.dev</a
+                  >
+                </li>
+                <li>
+                  <span class="label">Repo</span>
+                  <a
+                    href="https://github.com/codybarr-thinkful/scrabble-solver"
+                    target="_blank"
+                    rel="noopener"
+                    >https://github.com/codybarr-thinkful/scrabble-solver</a
+                  >
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <svg
+          class="triangle mobile projects-triangle"
+          preserveaspectratio="none"
+          viewbox="0 0 100 100"
+        >
+          <polygon points="0,100 100,50 100,100" />
+        </svg>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/codybarr"
+            target="_blank"
+            rel="noopener"
+            aria-label="link to cody's github"
+          >
+            <svg width="50px" height="50px">
+              <use xlink:href="#github-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/codybarr"
+            target="_blank"
+            rel="noopener"
+            aria-label="link to cody's linked in profile"
+          >
+            <svg width="50px" height="50px">
+              <use xlink:href="#linkedin-icon"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="email">
+          <a href="mailto:cody.barr@gmail.com">cody.barr@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+    <div style="display: none">
+      <svg
+        id="jquery-icon"
+        viewbox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.9733 7.5425C17.0392 9.165 14.1425 8.90833 12.52 6.97416C10.8883 5.03083 11.145 2.125 13.0792 0.52083L13.5467 0.172497C11.9975 1.84083 11.8967 4.44416 13.4 6.25C14.8942 8.02833 17.4792 8.37667 19.395 7.13916L18.9733 7.5425ZM17.3417 11.2917C14.4358 13.7392 10.1 13.3633 7.66166 10.4483C5.21416 7.5425 5.59916 3.20666 8.505 0.749997L9.34833 0.16333C7.13 2.66583 7.02 6.48833 9.23833 9.12833C11.4567 11.75 15.2333 12.3275 18.0842 10.5767L17.3417 11.2917ZM16.3058 15.765C12.2358 19.1842 6.15833 18.6525 2.73916 14.5733C-0.670836 10.5033 -0.13917 4.41666 3.93083 1.01583L4.94833 0.291664C1.73083 3.775 1.52916 9.21083 4.67333 12.96C7.8175 16.7 13.2075 17.4517 17.2133 14.8942L16.3058 15.765Z"
+        />
+      </svg>
 
-			<svg
-				id="html5-icon"
-				viewbox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M8 14.0967L12.07 13.0608L12.62 7.46917H5.38L5.2 5.60833H12.8L13 3.78417H3L3.56 9.29333H10.45L10.22 11.6583L8 12.2083L5.78 11.6583L5.64 10.1367H3.64L3.93 13.0608L8 14.0967ZM0.0699997 0.75H15.93L14.5 15.6L8 17.25L1.5 15.6L0.0699997 0.75Z"
-				/>
-			</svg>
+      <svg
+        id="html5-icon"
+        viewbox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 14.0967L12.07 13.0608L12.62 7.46917H5.38L5.2 5.60833H12.8L13 3.78417H3L3.56 9.29333H10.45L10.22 11.6583L8 12.2083L5.78 11.6583L5.64 10.1367H3.64L3.93 13.0608L8 14.0967ZM0.0699997 0.75H15.93L14.5 15.6L8 17.25L1.5 15.6L0.0699997 0.75Z"
+        />
+      </svg>
 
-			<svg
-				id="css3-icon"
-				viewbox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M3.03333 0.75L2.50899 3.81167H13.4716L13.1167 5.79167H2.16213L1.62973 8.84417H12.5923L11.9793 12.3367L7.55873 13.9958L3.72706 12.3367L3.99326 10.8333H1.29899L0.661728 14.5L6.99406 17.25L14.2944 14.5L15.2624 8.9725L15.456 7.86333L16.6983 0.75H3.03333Z"
-				/>
-			</svg>
+      <svg
+        id="css3-icon"
+        viewbox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.03333 0.75L2.50899 3.81167H13.4716L13.1167 5.79167H2.16213L1.62973 8.84417H12.5923L11.9793 12.3367L7.55873 13.9958L3.72706 12.3367L3.99326 10.8333H1.29899L0.661728 14.5L6.99406 17.25L14.2944 14.5L15.2624 8.9725L15.456 7.86333L16.6983 0.75H3.03333Z"
+        />
+      </svg>
 
-			<svg
-				id="linkedin-icon"
-				viewbox="0 0 50 50"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M44.4444 0C45.9179 0 47.3309 0.585316 48.3728 1.62718C49.4147 2.66905 50 4.08213 50 5.55556V44.4444C50 45.9179 49.4147 47.3309 48.3728 48.3728C47.3309 49.4147 45.9179 50 44.4444 50H5.55556C4.08213 50 2.66905 49.4147 1.62718 48.3728C0.585316 47.3309 0 45.9179 0 44.4444V5.55556C0 4.08213 0.585316 2.66905 1.62718 1.62718C2.66905 0.585316 4.08213 0 5.55556 0H44.4444ZM43.0556 43.0556V28.3333C43.0556 25.9316 42.1015 23.6283 40.4032 21.9301C38.705 20.2318 36.4017 19.2778 34 19.2778C31.6389 19.2778 28.8889 20.7222 27.5556 22.8889V19.8056H19.8056V43.0556H27.5556V29.3611C27.5556 27.2222 29.2778 25.4722 31.4167 25.4722C32.4481 25.4722 33.4372 25.8819 34.1665 26.6112C34.8958 27.3406 35.3056 28.3297 35.3056 29.3611V43.0556H43.0556ZM10.7778 15.4444C12.0155 15.4444 13.2024 14.9528 14.0776 14.0776C14.9528 13.2024 15.4444 12.0155 15.4444 10.7778C15.4444 8.19444 13.3611 6.08333 10.7778 6.08333C9.53273 6.08333 8.33868 6.57792 7.4583 7.4583C6.57792 8.33868 6.08333 9.53273 6.08333 10.7778C6.08333 13.3611 8.19444 15.4444 10.7778 15.4444ZM14.6389 43.0556V19.8056H6.94444V43.0556H14.6389Z"
-				/>
-			</svg>
+      <svg
+        id="linkedin-icon"
+        viewbox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M44.4444 0C45.9179 0 47.3309 0.585316 48.3728 1.62718C49.4147 2.66905 50 4.08213 50 5.55556V44.4444C50 45.9179 49.4147 47.3309 48.3728 48.3728C47.3309 49.4147 45.9179 50 44.4444 50H5.55556C4.08213 50 2.66905 49.4147 1.62718 48.3728C0.585316 47.3309 0 45.9179 0 44.4444V5.55556C0 4.08213 0.585316 2.66905 1.62718 1.62718C2.66905 0.585316 4.08213 0 5.55556 0H44.4444ZM43.0556 43.0556V28.3333C43.0556 25.9316 42.1015 23.6283 40.4032 21.9301C38.705 20.2318 36.4017 19.2778 34 19.2778C31.6389 19.2778 28.8889 20.7222 27.5556 22.8889V19.8056H19.8056V43.0556H27.5556V29.3611C27.5556 27.2222 29.2778 25.4722 31.4167 25.4722C32.4481 25.4722 33.4372 25.8819 34.1665 26.6112C34.8958 27.3406 35.3056 28.3297 35.3056 29.3611V43.0556H43.0556ZM10.7778 15.4444C12.0155 15.4444 13.2024 14.9528 14.0776 14.0776C14.9528 13.2024 15.4444 12.0155 15.4444 10.7778C15.4444 8.19444 13.3611 6.08333 10.7778 6.08333C9.53273 6.08333 8.33868 6.57792 7.4583 7.4583C6.57792 8.33868 6.08333 9.53273 6.08333 10.7778C6.08333 13.3611 8.19444 15.4444 10.7778 15.4444ZM14.6389 43.0556V19.8056H6.94444V43.0556H14.6389Z"
+        />
+      </svg>
 
-			<svg
-				id="github-icon"
-				viewbox="0 0 50 50"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M25 0C21.717 0 18.4661 0.662698 15.4329 1.95026C12.3998 3.23782 9.6438 5.12502 7.32233 7.50412C2.63392 12.3089 0 18.8256 0 25.6207C0 36.945 7.175 46.5528 17.1 49.9603C18.35 50.1653 18.75 49.371 18.75 48.6793C18.75 48.09 18.75 46.4759 18.75 44.3494C11.825 45.8866 10.35 40.9162 10.35 40.9162C9.2 37.9442 7.575 37.15 7.575 37.15C5.3 35.5615 7.75 35.6127 7.75 35.6127C10.25 35.7921 11.575 38.2517 11.575 38.2517C13.75 42.146 17.425 40.9931 18.85 40.3782C19.075 38.7128 19.725 37.5855 20.425 36.945C14.875 36.3045 9.05 34.1011 9.05 24.3396C9.05 21.4957 10 19.2155 11.625 17.3964C11.375 16.7559 10.5 14.0914 11.875 10.6326C11.875 10.6326 13.975 9.94082 18.75 13.2459C20.725 12.6822 22.875 12.4004 25 12.4004C27.125 12.4004 29.275 12.6822 31.25 13.2459C36.025 9.94082 38.125 10.6326 38.125 10.6326C39.5 14.0914 38.625 16.7559 38.375 17.3964C40 19.2155 40.95 21.4957 40.95 24.3396C40.95 34.1267 35.1 36.2789 29.525 36.9194C30.425 37.7136 31.25 39.2765 31.25 41.6592C31.25 45.0924 31.25 47.8594 31.25 48.6793C31.25 49.371 31.65 50.1909 32.925 49.9603C42.85 46.5271 50 36.945 50 25.6207C50 22.2561 49.3534 18.9245 48.097 15.8161C46.8406 12.7076 44.9991 9.88322 42.6777 7.50412C40.3562 5.12502 37.6002 3.23782 34.5671 1.95026C31.5339 0.662698 28.283 0 25 0Z"
-				/>
-			</svg>
+      <svg
+        id="github-icon"
+        viewbox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M25 0C21.717 0 18.4661 0.662698 15.4329 1.95026C12.3998 3.23782 9.6438 5.12502 7.32233 7.50412C2.63392 12.3089 0 18.8256 0 25.6207C0 36.945 7.175 46.5528 17.1 49.9603C18.35 50.1653 18.75 49.371 18.75 48.6793C18.75 48.09 18.75 46.4759 18.75 44.3494C11.825 45.8866 10.35 40.9162 10.35 40.9162C9.2 37.9442 7.575 37.15 7.575 37.15C5.3 35.5615 7.75 35.6127 7.75 35.6127C10.25 35.7921 11.575 38.2517 11.575 38.2517C13.75 42.146 17.425 40.9931 18.85 40.3782C19.075 38.7128 19.725 37.5855 20.425 36.945C14.875 36.3045 9.05 34.1011 9.05 24.3396C9.05 21.4957 10 19.2155 11.625 17.3964C11.375 16.7559 10.5 14.0914 11.875 10.6326C11.875 10.6326 13.975 9.94082 18.75 13.2459C20.725 12.6822 22.875 12.4004 25 12.4004C27.125 12.4004 29.275 12.6822 31.25 13.2459C36.025 9.94082 38.125 10.6326 38.125 10.6326C39.5 14.0914 38.625 16.7559 38.375 17.3964C40 19.2155 40.95 21.4957 40.95 24.3396C40.95 34.1267 35.1 36.2789 29.525 36.9194C30.425 37.7136 31.25 39.2765 31.25 41.6592C31.25 45.0924 31.25 47.8594 31.25 48.6793C31.25 49.371 31.65 50.1909 32.925 49.9603C42.85 46.5271 50 36.945 50 25.6207C50 22.2561 49.3534 18.9245 48.097 15.8161C46.8406 12.7076 44.9991 9.88322 42.6777 7.50412C40.3562 5.12502 37.6002 3.23782 34.5671 1.95026C31.5339 0.662698 28.283 0 25 0Z"
+        />
+      </svg>
 
-			<svg
-				id="tailwind-icon"
-				viewbox="0 0 64 64"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<defs>
-					<linearGradient
-						x1="0"
-						y1="-21.333"
-						y2="85.333"
-						id="A"
-						x2="64"
-						gradientUnits="userSpaceOnUse"
-					>
-						<stop stop-color="#2383ae" offset="0%" />
-						<stop stop-color="#6dd7b9" offset="100%" />
-					</linearGradient>
-				</defs>
-				<path
-					d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
-				/>
-			</svg>
+      <svg
+        id="tailwind-icon"
+        viewbox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient
+            x1="0"
+            y1="-21.333"
+            y2="85.333"
+            id="A"
+            x2="64"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#2383ae" offset="0%" />
+            <stop stop-color="#6dd7b9" offset="100%" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
+        />
+      </svg>
 
-			<svg
-				id="gridsome-icon"
-				viewBox="0 0 245 245"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M221.494 101.381C233.274 100.815 243.701 109.953 244.718 121.743C249.124 178.78 196.925 242.674 123.366 244.717C61.3771 246.247 0.0683594 196.619 0.0683594 121.58C0.0683594 109.754 9.84059 100.167 21.6338 100.167C33.427 100.167 42.9873 109.754 42.9873 121.58C42.9873 170.939 82.675 202.883 122.316 201.905C171.115 200.549 202.839 158.295 201.189 123.795C200.623 111.983 209.715 101.948 221.494 101.381Z"
-				/>
-				<path
-					d="M168.15 123.24C168.15 111.133 178.026 101.318 190.208 101.318L222.354 101.318C234.537 101.318 244.718 111.133 244.718 123.24C244.718 135.348 234.537 145.163 222.354 145.163H190.208C178.026 145.163 168.15 135.348 168.15 123.24Z"
-				/>
-				<path
-					d="M100.7 123.272C100.7 111.147 110.513 101.318 122.604 101.318C134.696 101.318 144.509 111.147 144.509 123.272C144.509 135.397 134.696 145.227 122.604 145.227C110.513 145.227 100.7 135.397 100.7 123.272Z"
-				/>
-				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					d="M143.902 20.6961C144.392 32.5119 135.236 42.4883 123.453 42.979C72.5875 45.0973 41.5346 85.0757 43.0461 123.036C43.5166 134.852 34.5367 144.814 22.7528 145.286C10.969 145.758 0.606386 136.221 0.135873 124.405C-2.32727 62.5448 49.1805 1.39124 121.681 0.190257C133.464 -0.300446 143.413 8.88034 143.902 20.6961Z"
-				/>
-				<defs>
-					<linearGradient
-						id="paint0_linear"
-						x1="122.523"
-						y1="100.167"
-						x2="122.523"
-						y2="244.752"
-						gradientUnits="userSpaceOnUse"
-					>
-						<stop stop-color="#00583E" />
-						<stop offset="1" stop-color="#00835C" />
-					</linearGradient>
-				</defs>
-			</svg>
+      <svg
+        id="gridsome-icon"
+        viewBox="0 0 245 245"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M221.494 101.381C233.274 100.815 243.701 109.953 244.718 121.743C249.124 178.78 196.925 242.674 123.366 244.717C61.3771 246.247 0.0683594 196.619 0.0683594 121.58C0.0683594 109.754 9.84059 100.167 21.6338 100.167C33.427 100.167 42.9873 109.754 42.9873 121.58C42.9873 170.939 82.675 202.883 122.316 201.905C171.115 200.549 202.839 158.295 201.189 123.795C200.623 111.983 209.715 101.948 221.494 101.381Z"
+        />
+        <path
+          d="M168.15 123.24C168.15 111.133 178.026 101.318 190.208 101.318L222.354 101.318C234.537 101.318 244.718 111.133 244.718 123.24C244.718 135.348 234.537 145.163 222.354 145.163H190.208C178.026 145.163 168.15 135.348 168.15 123.24Z"
+        />
+        <path
+          d="M100.7 123.272C100.7 111.147 110.513 101.318 122.604 101.318C134.696 101.318 144.509 111.147 144.509 123.272C144.509 135.397 134.696 145.227 122.604 145.227C110.513 145.227 100.7 135.397 100.7 123.272Z"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M143.902 20.6961C144.392 32.5119 135.236 42.4883 123.453 42.979C72.5875 45.0973 41.5346 85.0757 43.0461 123.036C43.5166 134.852 34.5367 144.814 22.7528 145.286C10.969 145.758 0.606386 136.221 0.135873 124.405C-2.32727 62.5448 49.1805 1.39124 121.681 0.190257C133.464 -0.300446 143.413 8.88034 143.902 20.6961Z"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="122.523"
+            y1="100.167"
+            x2="122.523"
+            y2="244.752"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#00583E" />
+            <stop offset="1" stop-color="#00835C" />
+          </linearGradient>
+        </defs>
+      </svg>
 
-			<svg
-				id="vue-icon"
-				viewBox="0 0 256 221"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z"
-				/>
-				<path d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z" />
-				<path
-					d="M50.56 0L128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z"
-				/>
-			</svg>
+      <svg
+        id="vue-icon"
+        viewBox="0 0 256 221"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z" />
+        <path d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z" />
+        <path d="M50.56 0L128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z" />
+      </svg>
 
-			<svg
-				id="bulma-icon"
-				viewBox="0 0 110 161"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M24.9 135.5L0 110.5L4.9 75.5L9.8 40.6L30.1 20.3L50.4 0L75.6 25.3L100.9 50.5L85.9 65.5L70.9 80.5L90.9 100.5C103.3 112.9 110.5 120.8 109.9 121.4C108 123.1 51.4 160.5 50.7 160.5C50.2 160.5 38.7 149.3 24.9 135.5Z"
-				/>
-			</svg>
+      <svg
+        id="bulma-icon"
+        viewBox="0 0 110 161"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24.9 135.5L0 110.5L4.9 75.5L9.8 40.6L30.1 20.3L50.4 0L75.6 25.3L100.9 50.5L85.9 65.5L70.9 80.5L90.9 100.5C103.3 112.9 110.5 120.8 109.9 121.4C108 123.1 51.4 160.5 50.7 160.5C50.2 160.5 38.7 149.3 24.9 135.5Z"
+        />
+      </svg>
 
-			<svg
-				id="firebase-icon"
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"
-				/>
-			</svg>
-		</div>
-	</body>
+      <svg
+        id="firebase-icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"
+        />
+      </svg>
+    </div>
+  </body>
 </html>
