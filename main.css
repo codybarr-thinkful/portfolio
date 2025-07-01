@@ -94,8 +94,8 @@ p {
 }
 
 header.hero {
-  background: center / cover no-repeat url('images/beach-background.jpg')
-    rgba(0, 0, 0, 0.4);
+  background: center / cover no-repeat url('images/matrix-background.jpg')
+    rgba(0, 0, 0, 0.5);
   background-attachment: fixed;
   color: white;
   font-size: var(--text-md);
